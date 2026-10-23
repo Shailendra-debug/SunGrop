@@ -27,5 +27,8 @@ For automatic server restarts during development, use `npm run dev`.
 - `POST /api/rates` — create a pricing tier.
 - `PUT /api/rates/:id` — update a pricing tier.
 - `DELETE /api/rates/:id` — delete a pricing tier.
+- `POST /api/enquiries` — save an enquiry form submission.
+- `GET /api/enquiries` — list saved enquiries; optional `?email=` filters by email.
+- `GET /api/enquiries/:id` — fetch one saved enquiry.
 
 The browser pages use `http://localhost:5000/api` as their API base URL.

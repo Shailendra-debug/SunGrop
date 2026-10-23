@@ -14,6 +14,7 @@ const mongoose = require("mongoose");
 
 const proposalRoutes = require("./routes/proposals");
 const rateRoutes = require("./routes/rates");
+const enquiryRoutes = require("./routes/enquiries");
 
 const app = express();
 const port = Number(process.env.PORT) || 5000;
@@ -45,6 +46,7 @@ app.get("/api/health", (_req, res) => {
 
 app.use("/api/proposals", proposalRoutes);
 app.use("/api/rates", rateRoutes);
+app.use("/api/enquiries", enquiryRoutes);
 
 app.use(express.static(frontendDirectory));
 
